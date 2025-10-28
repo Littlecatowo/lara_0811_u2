@@ -20,4 +20,4 @@ Route::get("r2", function () {
 
 Route::get("home/{name?}", function ($name="MyFriend") {
     return "Hello, " .$name;
-});
+}) -> name("hello.index");
