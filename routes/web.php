@@ -31,4 +31,4 @@ Route::get("r2", function() {
 
 Route::get("hello/{name?}", function($name= "Everyone") {
     return "Hello, " . $name;
-});
+}) -> name("hello.index"); 
